@@ -12,10 +12,19 @@
 
 <body>
     <div id="app">
-        <h1>{{product}}</h1>
-        <h1>{{info}}</h1>
+        <div class="nav-bar"></div>
+        <div class="product-container ">
+            <div class="product-image">
+                <!-- image goes here-->
+                <img :src="image">
+            </div>
+            <div class="product-info">
+                <a href="https://www.camt.cmu.ac.th/ ">
+                    <h1>{{product}}</h1>
+                </a>
+            </div>
+        </div>
     </div>
-
     <!-- Import Js -->
     <script src="./main.js"></script>
     <script>
